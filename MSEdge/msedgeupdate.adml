@@ -1,0 +1,316 @@
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+
+  <resources>
+    <stringTable>
+      <string id="Sup_GoogleUpdate1_2_145_5">Microsoft Edge Update 1.2.145.5 and later</string>
+      <string id="Sup_GoogleUpdate1_3_21_81">Microsoft Edge Update 1.3.21.81 and later</string>
+      <string id="Sup_GoogleUpdate1_3_26_0">Microsoft Edge Update 1.3.26.0 and later</string>
+      <string id="Sup_GoogleUpdate1_3_33_5">Microsoft Edge Update 1.3.33.5 and later</string>
+      <string id="Sup_GoogleUpdate1_3_34_3">Microsoft Edge Update 1.3.34.3 and later</string>
+      <string id="Cat_Google">Microsoft Edge Update</string>
+      <string id="Cat_GoogleUpdate">Microsoft Edge Update</string>
+      <string id="Cat_Preferences">Preferences</string>
+      <string id="Cat_ProxyServer">Proxy Server</string>
+      <string id="Cat_Applications">Applications</string>
+      <string id="Pol_AutoUpdateCheckPeriod">Auto-update check period override</string>
+      <string id="Pol_UpdateCheckSuppressedPeriod">Time period in each day to suppress auto-update check</string>
+      <string id="Pol_DownloadPreference">Download URL class override</string>
+      <string id="DownloadPreference_DropDown">Cacheable download URLs</string>
+      <string id="Pol_ProxyMode">Choose how to specify proxy server settings</string>
+      <string id="Pol_ProxyServer">Address or URL of proxy server</string>
+      <string id="Pol_ProxyPacUrl">URL to a proxy .pac file</string>
+      <string id="Pol_DefaultAllowInstallation">Allow installation default</string>
+      <string id="Pol_AllowInstallation">Allow installation</string>
+      <string id="Pol_DefaultUpdatePolicy">Update policy override default</string>
+      <string id="Pol_UpdatePolicy">Update policy override</string>
+      <string id="Pol_TargetVersionPrefix">Target version prefix override</string>
+      <string id="Pol_RollbackToTargetVersion">Rollback to Target version</string>
+      <string id="Pol_AllowSideBySideExperience">Allow Microsoft Edge Side by Side browser experience</string>
+      <string id="Explain_AllowSideBySideExperience">This policy lets a user run Microsoft Edge (Edge HTML) and Microsoft Edge (Chromium-based) side-by-side.
+
+If this policy is set to “Not configured”, Microsoft Edge (Chromium-based) will replace Microsoft Edge (Edge HTML) after the Microsoft Edge (Chromium-based) stable channel and the November 2019 security updates are installed.  This is the same behavior as the “Disabled” setting.
+
+The “Disabled” setting blocks a side-by-side experience and Microsoft Edge (Chromium-based) will replace Microsoft Edge (Edge HTML) after the Microsoft Edge (Chromium-based) stable channel and the November 2019 security updates are installed.  This is the same behavior as the “Not Configured” setting.
+
+When this policy is “Enabled”, Microsoft Edge (Chromium-based) and Microsoft Edge (Edge HTML) can run side-by-side after Microsoft Edge (Chromium-based) is installed.
+
+For this group policy to take affect, it must be configured before the automatic install of Microsoft Edge (Chromium-based) by Windows Update. Note: ​A user can block the automatic update of Microsoft Edge (Chromium-based) by using the Microsoft Edge (Chromium-based) Blocker Toolkit.</string>
+      <string id="Part_AutoUpdateCheckPeriod">Minutes between update checks</string>
+      <string id="Part_UpdateCheckSuppressedStartHour">Hour in a day that start to suppress update check</string>
+      <string id="Part_UpdateCheckSuppressedStartMin">Minute in hour that starts to suppress update check</string>
+      <string id="Part_UpdateCheckSuppressedDurationMin">Number of minutes to suppress update check each day</string>
+      <string id="Part_ProxyMode">Choose how to specify proxy server settings</string>
+      <string id="Part_ProxyServer">Address or URL of proxy server</string>
+      <string id="Part_ProxyPacUrl">URL to a proxy .pac file</string>
+      <string id="Part_UpdatePolicy">Policy</string>
+      <string id="Part_TargetVersionPrefix">Target version prefix</string>
+      <string id="Name_UpdatesEnabled">Always allow updates (recommended)</string>
+      <string id="Name_ManualUpdatesOnly">Manual updates only</string>
+      <string id="Name_AutomaticUpdatesOnly">Automatic silent updates only</string>
+      <string id="Name_UpdatesDisabled">Updates disabled</string>
+      <string id="ProxyDisabled_DropDown">Never use a proxy</string>
+      <string id="ProxyAutoDetect_DropDown">Auto detect proxy settings</string>
+      <string id="ProxyPacScript_DropDown">Use a .pac proxy script</string>
+      <string id="ProxyFixedServers_DropDown">Use fixed proxy servers</string>
+      <string id="ProxyUseSystem_DropDown">Use system proxy settings</string>
+      <string id="Explain_GoogleUpdate">Policies to control the installation and updating of Microsoft Edge using Microsoft Edge Update.</string>
+      <string id="Explain_Preferences">General policies for Microsoft Edge Update.</string>
+      <string id="Explain_AutoUpdateCheckPeriod">If enabled, this policy lets you set a value for the minimum number of minutes between automatic update checks. Otherwise, by default, auto-update checks for updates every 10 hours.
+
+  If you want to disable all auto-update checks, set the value to 0 (not recommended).</string>
+      <string id="Explain_DownloadPreference">If enabled, the Microsoft Edge Update server will attempt to provide cache-friendly URLs for update payloads in its responses.</string>
+      <string id="Explain_UpdateCheckSuppressedPeriod">If you enable this policy, update checks are suppressed each day starting at Hour:Minute for a period of Duration (in minutes). Duration isn't affected by daylight saving time. For example, if the start time is 22:00 and the duration is 480 minutes, updates will be suppressed for exactly 8 hours, regardless of whether daylight saving time starts or ends during this period.
+
+  If you disable or don't configure this policy, update checks aren't suppressed during any specific period.</string>
+      <string id="Explain_ProxyMode">Allows you to specify the proxy server settings that are used by Microsoft Edge Update.
+
+  If you enable this policy, you can choose between the following proxy server options:
+   - If you choose to never use a proxy server and always connect directly, all other options are ignored.
+   - If you choose to use system proxy settings or auto-detect the proxy server, all other options are ignored.
+   - If you choose fixed server proxy mode, you can specify further options in 'Address or URL of proxy server'.
+   - If you choose to use a .pac proxy script, you must specify the URL for the script in 'URL to a proxy .pac file'.
+
+  If you enable this policy, users in your organization can't change the proxy settings in Microsoft Edge Update.
+
+  If you disable or don't configure this policy, no proxy server settings are configured, but users in your organization can choose their own proxy settings for Microsoft Edge Update.</string>
+      <string id="Explain_ProxyServer">Allows you to specify the URL of the proxy server for Microsoft Edge Update to use.
+
+  If you enable this policy, you can set the proxy server URL used by Microsoft Edge Update in your organization.
+
+  This policy is applied only if you have selected manual proxy settings in the 'Choose how to specify proxy server settings' policy.
+
+  Don't configure this policy if you have selected a proxy setting other than manual in the 'Choose how to specify proxy server settings' policy.</string>
+      <string id="Explain_ProxyPacUrl">Allows you to specify a URL for a proxy auto-config (PAC) file.
+
+  If you enable this policy, you can specify a URL for a PAC file to automate how Microsoft Edge Update selects the appropriate proxy server for fetching a particular website.
+
+  This policy is applied only if you have specified manual proxy settings in the 'Choose how to specify proxy server settings' policy.
+
+  Don't configure this policy if you have selected a proxy setting other than manual in the 'Choose how to specify proxy server settings' policy.</string>
+      <string id="Explain_Applications">An updated ADMX/ADML template will be required to support Edge applications released in the future.</string>
+      <string id="Explain_DefaultAllowInstallation">Lets you specify the default behavior for all channels where allowing or blocking Microsoft Edge browser installation by Microsoft Edge Update is concerned.
+
+  Can be overridden for individual channels by specifying the 'Allow installation' policy for those specific channels. If you disable this policy, installation of Microsoft Edge through Microsoft Edge Update is blocked.
+
+  Affects installation of Microsoft Edge software only when users are running Microsoft Edge Update and only when they haven't configured the 'Allow installation' policy.
+
+  This policy doesn't prevent Microsoft Edge Update from running or prevent users from installing Microsoft Edge software by other methods.</string>
+      <string id="Explain_DefaultUpdatePolicy">Lets you specify the default behavior for all channels concerning the way Microsoft Edge Update handles available updates for Microsoft Edge. Can be overridden for individual channels by specifying the 'Update policy override' policy for those specific channels.
+
+  If you enable this policy, Microsoft Edge Update handles Microsoft Edge updates according to how you configure the following options:
+   - Always allow updates: Updates are always applied when found, either by periodic update check or by a manual update check.
+   - Automatic silent updates only: Updates are applied only when they're found by the periodic update check.
+   - Manual updates only: Updates are applied only when the user runs a manual update check.
+   - Updates disabled: Updates are never applied.
+
+  If you select manual updates, make sure you periodically check for updates by using the app's manual update mechanism, if available. If you disable updates, periodically check for updates, and distribute them to users.
+
+  If you don't enable and configure this policy, Microsoft Edge Update handles available updates as specified by the 'Update policy override' policy.</string>
+      <string id="Cat_MicrosoftEdge">Microsoft Edge</string>
+      <string id="Explain_InstallMicrosoftEdge">Specifies whether a Microsoft Edge channel can be installed using Microsoft Edge Update.
+
+  If you enable this policy for a channel, users can install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you disable this policy for a channel, users cannot install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you don't configure this policy for a channel, the 'Allow installation default' policy configuration determines whether users can install that channel of Microsoft Edge through Microsoft Edge Update.</string>
+      <string id="Explain_AutoUpdateMicrosoftEdge">Specifies how Microsoft Edge Update handles available updates from Microsoft Edge.
+
+  If you enable this policy, Microsoft Edge Update handles Microsoft Edge updates according to how you configure the following options:
+   - Always allow updates: Updates are always applied when found, either by periodic update check or by a manual update check.
+   - Automatic silent updates only: Updates are applied only when they're found by the periodic update check.
+   - Manual updates only: Updates are applied only when the user runs a manual update check. (Not all apps provide an interface for this option.)
+   - Updates disabled: Updates are never applied.
+
+  If you select manual updates, make sure you periodically check for updates by using the app's manual update mechanism, if available. If you disable updates, periodically check for updates, and distribute them to users.
+
+  If you don't enable and configure this policy, Microsoft Edge Update handles available updates as specified by the 'Update policy override default' policy. More information is not final: https://to-be-replaced.invalid/edge</string>
+      <string id="Explain_TargetVersionPrefixMicrosoftEdge">Specifies which version Microsoft Edge should be updated to.
+
+  When this policy is enabled, the app will be updated to the version prefixed with this policy value.
+
+  Some examples:
+  1) Not configured: app will be updated to the latest version available.
+  2) Policy value is set to "55.": the app will be updated to any minor version of 55 (e.g., 55.24.34 or 55.60.2).
+  3) Policy value is "55.2.": the app will be updated to any minor version of 55.2 (e.g., 55.2.34 or 55.2.2).
+  4) Policy value is "55.24.34": the app will be updated to this specific version only.</string>
+      <string id="Explain_RollbackToTargetVersionMicrosoftEdge">Specifies that Microsoft Edge Update should roll installations of policy 'Target version prefix override' back to the version indicated by "Target version prefix override".
+
+  This policy setting has no effect unless "Target version prefix override" is set.
+
+  If this policy is not configured or is disabled, installs that have a version higher than that specified by "Target version prefix override" will be left as-is.
+
+  If this policy is enabled, installs that have a version higher than that specified by "Target version prefix override" will be downgraded to the highest available version that matches the target version.
+
+  'Target version prefix override' This policy is meant to serve as temporary measure when Enterprise Administrators need to downgrade for business reasons. To ensure users are protected by the latest security updates, the most recent version should be used. When versions are downgraded to older versions, there could be incompatibilities.</string>
+      <string id="Cat_MicrosoftEdgeBeta">Microsoft Edge Beta</string>
+      <string id="Explain_InstallMicrosoftEdgeBeta">Specifies whether a Microsoft Edge channel can be installed using Microsoft Edge Update.
+
+  If you enable this policy for a channel, users can install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you disable this policy for a channel, users cannot install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you don't configure this policy for a channel, the 'Allow installation default' policy configuration determines whether users can install that channel of Microsoft Edge through Microsoft Edge Update.</string>
+      <string id="Explain_AutoUpdateMicrosoftEdgeBeta">Specifies how Microsoft Edge Update handles available updates from Microsoft Edge.
+
+  If you enable this policy, Microsoft Edge Update handles Microsoft Edge updates according to how you configure the following options:
+   - Always allow updates: Updates are always applied when found, either by periodic update check or by a manual update check.
+   - Automatic silent updates only: Updates are applied only when they're found by the periodic update check.
+   - Manual updates only: Updates are applied only when the user runs a manual update check. (Not all apps provide an interface for this option.)
+   - Updates disabled: Updates are never applied.
+
+  If you select manual updates, make sure you periodically check for updates by using the app's manual update mechanism, if available. If you disable updates, periodically check for updates, and distribute them to users.
+
+  If you don't enable and configure this policy, Microsoft Edge Update handles available updates as specified by the 'Update policy override default' policy. More information is not final: https://to-be-replaced.invalid/edgebeta</string>
+      <string id="Explain_TargetVersionPrefixMicrosoftEdgeBeta">Specifies which version Microsoft Edge should be updated to.
+
+  When this policy is enabled, the app will be updated to the version prefixed with this policy value.
+
+  Some examples:
+  1) Not configured: app will be updated to the latest version available.
+  2) Policy value is set to "55.": the app will be updated to any minor version of 55 (e.g., 55.24.34 or 55.60.2).
+  3) Policy value is "55.2.": the app will be updated to any minor version of 55.2 (e.g., 55.2.34 or 55.2.2).
+  4) Policy value is "55.24.34": the app will be updated to this specific version only.</string>
+      <string id="Explain_RollbackToTargetVersionMicrosoftEdgeBeta">Specifies that Microsoft Edge Update should roll installations of policy 'Target version prefix override' back to the version indicated by "Target version prefix override".
+
+  This policy setting has no effect unless "Target version prefix override" is set.
+
+  If this policy is not configured or is disabled, installs that have a version higher than that specified by "Target version prefix override" will be left as-is.
+
+  If this policy is enabled, installs that have a version higher than that specified by "Target version prefix override" will be downgraded to the highest available version that matches the target version.
+
+  'Target version prefix override' This policy is meant to serve as temporary measure when Enterprise Administrators need to downgrade for business reasons. To ensure users are protected by the latest security updates, the most recent version should be used. When versions are downgraded to older versions, there could be incompatibilities.</string>
+      <string id="Cat_MicrosoftEdgeDev">Microsoft Edge Dev</string>
+      <string id="Explain_InstallMicrosoftEdgeDev">Specifies whether a Microsoft Edge channel can be installed using Microsoft Edge Update.
+
+  If you enable this policy for a channel, users can install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you disable this policy for a channel, users cannot install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you don't configure this policy for a channel, the 'Allow installation default' policy configuration determines whether users can install that channel of Microsoft Edge through Microsoft Edge Update.</string>
+      <string id="Explain_AutoUpdateMicrosoftEdgeDev">Specifies how Microsoft Edge Update handles available updates from Microsoft Edge.
+
+  If you enable this policy, Microsoft Edge Update handles Microsoft Edge updates according to how you configure the following options:
+   - Always allow updates: Updates are always applied when found, either by periodic update check or by a manual update check.
+   - Automatic silent updates only: Updates are applied only when they're found by the periodic update check.
+   - Manual updates only: Updates are applied only when the user runs a manual update check. (Not all apps provide an interface for this option.)
+   - Updates disabled: Updates are never applied.
+
+  If you select manual updates, make sure you periodically check for updates by using the app's manual update mechanism, if available. If you disable updates, periodically check for updates, and distribute them to users.
+
+  If you don't enable and configure this policy, Microsoft Edge Update handles available updates as specified by the 'Update policy override default' policy. More information is not final: https://to-be-replaced.invalid/edgedev</string>
+      <string id="Explain_TargetVersionPrefixMicrosoftEdgeDev">Specifies which version Microsoft Edge should be updated to.
+
+  When this policy is enabled, the app will be updated to the version prefixed with this policy value.
+
+  Some examples:
+  1) Not configured: app will be updated to the latest version available.
+  2) Policy value is set to "55.": the app will be updated to any minor version of 55 (e.g., 55.24.34 or 55.60.2).
+  3) Policy value is "55.2.": the app will be updated to any minor version of 55.2 (e.g., 55.2.34 or 55.2.2).
+  4) Policy value is "55.24.34": the app will be updated to this specific version only.</string>
+      <string id="Explain_RollbackToTargetVersionMicrosoftEdgeDev">Specifies that Microsoft Edge Update should roll installations of policy 'Target version prefix override' back to the version indicated by "Target version prefix override".
+
+  This policy setting has no effect unless "Target version prefix override" is set.
+
+  If this policy is not configured or is disabled, installs that have a version higher than that specified by "Target version prefix override" will be left as-is.
+
+  If this policy is enabled, installs that have a version higher than that specified by "Target version prefix override" will be downgraded to the highest available version that matches the target version.
+
+  'Target version prefix override' This policy is meant to serve as temporary measure when Enterprise Administrators need to downgrade for business reasons. To ensure users are protected by the latest security updates, the most recent version should be used. When versions are downgraded to older versions, there could be incompatibilities.</string>
+      <string id="Cat_MicrosoftEdgeCanary">Microsoft Edge Canary</string>
+      <string id="Explain_InstallMicrosoftEdgeCanary">Specifies whether a Microsoft Edge channel can be installed using Microsoft Edge Update.
+
+  If you enable this policy for a channel, users can install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you disable this policy for a channel, users cannot install that channel of Microsoft Edge through Microsoft Edge Update.
+
+  If you don't configure this policy for a channel, the 'Allow installation default' policy configuration determines whether users can install that channel of Microsoft Edge through Microsoft Edge Update.</string>
+      <string id="Explain_AutoUpdateMicrosoftEdgeCanary">Specifies how Microsoft Edge Update handles available updates from Microsoft Edge.
+
+  If you enable this policy, Microsoft Edge Update handles Microsoft Edge updates according to how you configure the following options:
+   - Always allow updates: Updates are always applied when found, either by periodic update check or by a manual update check.
+   - Automatic silent updates only: Updates are applied only when they're found by the periodic update check.
+   - Manual updates only: Updates are applied only when the user runs a manual update check. (Not all apps provide an interface for this option.)
+   - Updates disabled: Updates are never applied.
+
+  If you select manual updates, make sure you periodically check for updates by using the app's manual update mechanism, if available. If you disable updates, periodically check for updates, and distribute them to users.
+
+  If you don't enable and configure this policy, Microsoft Edge Update handles available updates as specified by the 'Update policy override default' policy. More information is not final: https://to-be-replaced.invalid/edgecanary</string>
+      <string id="Explain_TargetVersionPrefixMicrosoftEdgeCanary">Specifies which version Microsoft Edge should be updated to.
+
+  When this policy is enabled, the app will be updated to the version prefixed with this policy value.
+
+  Some examples:
+  1) Not configured: app will be updated to the latest version available.
+  2) Policy value is set to "55.": the app will be updated to any minor version of 55 (e.g., 55.24.34 or 55.60.2).
+  3) Policy value is "55.2.": the app will be updated to any minor version of 55.2 (e.g., 55.2.34 or 55.2.2).
+  4) Policy value is "55.24.34": the app will be updated to this specific version only.</string>
+      <string id="Explain_RollbackToTargetVersionMicrosoftEdgeCanary">Specifies that Microsoft Edge Update should roll installations of policy 'Target version prefix override' back to the version indicated by "Target version prefix override".
+
+  This policy setting has no effect unless "Target version prefix override" is set.
+
+  If this policy is not configured or is disabled, installs that have a version higher than that specified by "Target version prefix override" will be left as-is.
+
+  If this policy is enabled, installs that have a version higher than that specified by "Target version prefix override" will be downgraded to the highest available version that matches the target version.
+
+  'Target version prefix override' This policy is meant to serve as temporary measure when Enterprise Administrators need to downgrade for business reasons. To ensure users are protected by the latest security updates, the most recent version should be used. When versions are downgraded to older versions, there could be incompatibilities.</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="Pol_AutoUpdateCheckPeriod">
+        <decimalTextBox refId="Part_AutoUpdateCheckPeriod" defaultValue="1400"
+            spinStep="60">Minutes between update checks</decimalTextBox>
+      </presentation>
+      <presentation id="Pol_UpdateCheckSuppressedPeriod">
+        <decimalTextBox refId="Part_UpdateCheckSuppressedStartHour"
+            defaultValue="0" spinStep="1">Hour</decimalTextBox>
+        <decimalTextBox refId="Part_UpdateCheckSuppressedStartMin"
+            defaultValue="0" spinStep="1">Minute</decimalTextBox>
+        <decimalTextBox refId="Part_UpdateCheckSuppressedDurationMin"
+            defaultValue="60">Duration</decimalTextBox>
+      </presentation>
+      <presentation id="Pol_DownloadPreference">
+        <dropdownList refId="Part_DownloadPreference"
+            defaultItem="0">Type of download URL to request</dropdownList>
+      </presentation>
+      <presentation id="Pol_ProxyMode">
+        <dropdownList refId="Part_ProxyMode"
+            defaultItem="0">Choose how to specify proxy server settings
+        </dropdownList>
+      </presentation>
+      <presentation id="Pol_ProxyServer">
+        <textBox refId="Part_ProxyServer">
+          <label>Address or URL of proxy server</label>
+          <defaultValue></defaultValue>
+        </textBox>
+      </presentation>
+      <presentation id="Pol_ProxyPacUrl">
+        <textBox refId="Part_ProxyPacUrl">
+          <label>URL to a proxy .pac file</label>
+          <defaultValue></defaultValue>
+        </textBox>
+      </presentation>
+      <presentation id="Pol_DefaultAllowInstallation" />
+      <presentation id="Pol_DefaultUpdatePolicy">
+        <dropdownList refId="Part_UpdatePolicy"
+            defaultItem="0">Policy</dropdownList>
+      </presentation>
+      <presentation id="Pol_AllowInstallation" />
+      <presentation id="Pol_UpdatePolicy">
+        <dropdownList refId="Part_UpdatePolicy"
+            defaultItem="0">Policy</dropdownList>
+      </presentation>      <presentation id="Pol_TargetVersionPrefix">
+        <textBox refId="Part_TargetVersionPrefix">
+          <label>Target version prefix</label>
+          <defaultValue></defaultValue>
+        </textBox>
+      </presentation>
+      <presentation id="Pol_RollbackToTargetVersion" />
+      <presentation id="Pol_AllowSideBySideExperience" />
+
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
